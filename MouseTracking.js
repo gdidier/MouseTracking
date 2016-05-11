@@ -65,7 +65,6 @@ var MouseTracking = function(arraySize){
 			
 			if (evt.clientX >= 0 && evt.clientX <= this.sizeX && evt.clientY >= 0 && evt.clientY <= this.sizeY)
 			{
-				console.log("in");
 				this.out = false;
 				this.posX = evt.clientX;
 				this.posY = evt.clientY;
@@ -73,7 +72,6 @@ var MouseTracking = function(arraySize){
 			}
 			else
 			{
-				console.log("out");
 				this.out 			= true;
 				this.previous_time 	= 0;
 			}
@@ -86,7 +84,6 @@ var MouseTracking = function(arraySize){
 			
 			if (evt.clientX < 0 || evt.clientX > this.sizeX || evt.clientY < 0 || this.clientY > this.clientY)
 			{
-				console.log("out");
 				this.out 			= true;
 				this.previous_time 	= 0;
 			}
